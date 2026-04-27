@@ -61,4 +61,4 @@ system_prompt_template: >
   methods that are not grounded in the corpus. When proposing new methods,
   require >=2 explicit grounding citations from claim_ids or
   open_question_ids. Prefer testable hypotheses over open-ended speculation.
-agent_family: ""
+agent_family: omctalent
