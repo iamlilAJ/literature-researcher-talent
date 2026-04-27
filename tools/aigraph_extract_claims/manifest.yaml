@@ -1,0 +1,24 @@
+name: aigraph_extract_claims
+type: python
+command: python tool.py
+parameters:
+  - name: papers_path
+    type: string
+    description: JSONL of Paper records.
+    required: true
+  - name: output_path
+    type: string
+    description: Where to write the claims JSONL.
+    required: true
+  - name: model
+    type: string
+    description: LLM model id (defaults to AIGRAPH_MODEL env var).
+    required: false
+  - name: workers
+    type: integer
+    description: Thread-pool size for parallel LLM calls (default 8).
+    required: false
+  - name: top_k_papers
+    type: integer
+    description: If set, only process top-K by priority_score.
+    required: false

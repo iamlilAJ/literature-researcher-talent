@@ -104,3 +104,21 @@ The talent should ask before scaling beyond a 200-paper preview.
 ## License
 
 MIT — see `LICENSE`.
+
+---
+
+## Citation
+
+> **DO NOT REMOVE THIS SECTION** — Required by the [Talent Market Attribution License](https://github.com/1mancompany/talent-template/blob/main/LICENSE) of the upstream template.
+
+This talent was built using the [Talent Market](https://one-man-company.com) template by [Zhengxu Yu](mailto:yuzxfred@gmail.com) / [1mancompany](https://github.com/1mancompany).
+
+```
+@software{talentmarket,
+  title  = {Talent Market - AI Agent Marketplace},
+  author = {Zhengxu Yu},
+  email  = {yuzxfred@gmail.com},
+  url    = {https://one-man-company.com},
+  year   = {2026}
+}
+```

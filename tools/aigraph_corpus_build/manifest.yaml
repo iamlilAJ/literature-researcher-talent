@@ -1,0 +1,20 @@
+name: aigraph_corpus_build
+type: python
+command: python tool.py
+parameters:
+  - name: root
+    type: string
+    description: Filesystem directory for the corpus (e.g. data/corpus/arxiv_reasoning).
+    required: true
+  - name: per_query_limit
+    type: integer
+    description: Cap per arXiv query (default 200, full corpus is ~5000 papers).
+    required: false
+  - name: sync_batch_size
+    type: integer
+    description: Papers per sync round (default 20).
+    required: false
+  - name: enrich_citations
+    type: boolean
+    description: Whether to call Semantic Scholar after sync (default true, free).
+    required: false

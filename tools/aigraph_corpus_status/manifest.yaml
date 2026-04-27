@@ -1,0 +1,8 @@
+name: aigraph_corpus_status
+type: python
+command: python tool.py
+parameters:
+  - name: root
+    type: string
+    description: Corpus root directory.
+    required: true

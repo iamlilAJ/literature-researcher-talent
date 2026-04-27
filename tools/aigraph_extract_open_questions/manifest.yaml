@@ -1,0 +1,20 @@
+name: aigraph_extract_open_questions
+type: python
+command: python tool.py
+parameters:
+  - name: papers_path
+    type: string
+    description: JSONL of Paper records.
+    required: true
+  - name: output_path
+    type: string
+    description: Where to write the open_questions JSONL.
+    required: true
+  - name: model
+    type: string
+    description: LLM model id (defaults to AIGRAPH_MODEL).
+    required: false
+  - name: max_papers
+    type: integer
+    description: Optional cap on papers processed.
+    required: false

@@ -1,0 +1,32 @@
+name: aigraph_pipeline_run
+type: python
+command: python tool.py
+parameters:
+  - name: claims_path
+    type: string
+    description: JSONL of Claim records.
+    required: true
+  - name: papers_path
+    type: string
+    description: JSONL of Paper records.
+    required: true
+  - name: open_questions_path
+    type: string
+    description: JSONL of OpenQuestion records.
+    required: true
+  - name: output_dir
+    type: string
+    description: Run directory; will be created.
+    required: true
+  - name: model
+    type: string
+    description: LLM model id (defaults to AIGRAPH_MODEL).
+    required: false
+  - name: select_k
+    type: integer
+    description: How many top hypotheses to select (default 12).
+    required: false
+  - name: creator_max_anomalies
+    type: integer
+    description: Cost guard — cap anomalies fed to creator.
+    required: false
