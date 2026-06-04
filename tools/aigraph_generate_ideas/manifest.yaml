@@ -1,0 +1,24 @@
+name: aigraph_generate_ideas
+type: python
+command: python tool.py
+parameters:
+  - name: topic
+    type: string
+    description: Research topic to generate ideas for.
+    required: true
+  - name: run
+    type: string
+    description: Existing aigraph run id (corpus). Use list_runs to discover.
+    required: true
+  - name: min_ideas
+    type: integer
+    description: Target idea count (1-20, default 5). Cascades through tiers until reached.
+    required: false
+  - name: as_markdown
+    type: boolean
+    description: Return rendered markdown report (default true) or structured dict.
+    required: false
+  - name: mcp_url
+    type: string
+    description: aigraph MCP endpoint (default http://localhost:8765/mcp/).
+    required: false
