@@ -1,0 +1,28 @@
+name: aigraph_get_idea_report
+type: python
+command: python tool.py
+parameters:
+  - name: topic
+    type: string
+    description: Research topic for the Stage 3 deliverable.
+    required: true
+  - name: run
+    type: string
+    description: Existing aigraph run id (corpus). Use list_runs to discover.
+    required: true
+  - name: k
+    type: integer
+    description: Top-K hypotheses to surface (1-20, default 8).
+    required: false
+  - name: kind
+    type: string
+    description: 'Hypothesis kind: "creator" (new-method-proposal, default) | "critic" (conflict-explanation) | "both"'
+    required: false
+  - name: out_path
+    type: string
+    description: Optional file path to also write the markdown to (in addition to returning it).
+    required: false
+  - name: mcp_url
+    type: string
+    description: aigraph MCP endpoint (default http://localhost:8765/mcp/).
+    required: false
