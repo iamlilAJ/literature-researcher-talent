@@ -1,0 +1,32 @@
+name: aigraph_research_ideas
+type: python
+command: python tool.py
+parameters:
+  - name: topic
+    type: string
+    description: Research topic to generate ideas for.
+    required: true
+  - name: max_papers
+    type: integer
+    description: Cap on papers if a new corpus is built (default 50).
+    required: false
+  - name: min_ideas
+    type: integer
+    description: Target idea count (1-20, default 5).
+    required: false
+  - name: reuse
+    type: boolean
+    description: Reuse a matching existing corpus if one exists (default true, INSTANT). Set false to force new build (SLOW + PAID).
+    required: false
+  - name: wait_seconds
+    type: integer
+    description: Max seconds to wait for fresh corpus build (0..1500, default 0 = submit-and-return).
+    required: false
+  - name: as_markdown
+    type: boolean
+    description: Return markdown report (default true) or structured dict.
+    required: false
+  - name: mcp_url
+    type: string
+    description: aigraph MCP endpoint (default http://localhost:8765/mcp/).
+    required: false
