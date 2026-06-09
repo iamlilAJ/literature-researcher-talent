@@ -20,7 +20,7 @@ even on sparse corpora that have no cross-paper anomalies.
 Rendered markdown report (default) or JSON of `{ideas, stats}`.
 
 ## Prereq
-aigraph MCP server (v0.4.0+) running on the same host. See aigraph repo's
+aigraph MCP server (v0.7.0+) running on the same host. See aigraph repo's
 `MCP_README.md`.
 
 ## Cost
