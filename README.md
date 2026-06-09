@@ -28,7 +28,7 @@ Then install the `aigraph` engine alongside OMC. Add to your OMC `pyproject.toml
 ```toml
 [project.optional-dependencies]
 literature-researcher = [
-    "aigraph[real] @ git+https://github.com/iamlilAJ/literature-conflict-graph.git@v0.3.0",
+    "aigraph[real] @ git+https://github.com/iamlilAJ/literature-conflict-graph.git@v0.7.0",
 ]
 ```
 
@@ -99,7 +99,7 @@ The talent should ask before scaling beyond a 200-paper preview.
 
 ## Engine repo
 
-[iamlilAJ/literature-conflict-graph](https://github.com/iamlilAJ/literature-conflict-graph) — the `aigraph` Python package this talent wraps. Pinned to `v0.3.0` in this talent.
+[iamlilAJ/literature-conflict-graph](https://github.com/iamlilAJ/literature-conflict-graph) — the `aigraph` Python package this talent wraps. Pinned to `v0.7.0` in this talent.
 
 ## License
 
